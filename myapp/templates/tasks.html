@@ -1,1 +1,7 @@
 <h1>Tasks</h1>
+
+{% for task in task %}
+<h1>{{ task.title }}</h1>
+<p>{{ task.description }}</p>
+<p>Project: {{ task.project.id }}</p>
+{% endfor %}
