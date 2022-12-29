@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{% static 'styles/main.css' %}">
 </head>
 <body>
-  <nav>
+  <nav class="navbar container">
     <ul>
       <li>
         <a href="{% url 'index' %}">Home</a>
@@ -33,9 +33,12 @@
     </ul>
   </nav>
   
-  {% block content %}
+
+  <main class="container">
+    {% block content %}
   
-  {% endblock %}
-  
+    {% endblock %}
+  </main>
+
 </body>
 </html>
